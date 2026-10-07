@@ -1,0 +1,29 @@
+{
+  "application": {
+    "id": "ecad-design",
+    "name": "ECAD Design",
+    "repository": "BlueDragon33/ECAD_Design",
+    "tier": "client",
+    "mode": "managed-client-foundation",
+    "status": "foundation"
+  },
+  "deviceNamespace": "ECAD-",
+  "remoteAdminReady": false,
+  "allow": [
+    "runtime-status",
+    "device-access-metadata",
+    "ui-policy",
+    "feature-flags",
+    "safe-audit-metadata"
+  ],
+  "deny": [
+    "ecad-project-files",
+    "schematics",
+    "netlists",
+    "pcb-layout-data",
+    "gerber-drill-outputs",
+    "private-design-notes",
+    "raw-ai-prompts"
+  ],
+  "note": "Operational management only. Engineering project truth remains owned by ECAD_Design."
+}
